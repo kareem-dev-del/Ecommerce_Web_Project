@@ -260,19 +260,23 @@ nav a.active::after {
 
 #p1 h3 {
     font-size: xxx-large;
+    color: #05162e;
 }
 
 #p1 h2 {
     font-size: 50px;
+    color: #1a1c1c;
 }
 
 #p1 h1 {
     font-size: 90px;
+    
 }
 
 #p1 p {
     font-size:25px;
    font-weight: bold;
+   color: #000;
 }
 
 #p1 button {
@@ -1127,6 +1131,13 @@ footer h4 {
         font-size: medium;
         display: block;
         width: fit-content;
+    }
+    #p1 button {
+        padding:25px 30px;
+    }
+    button #text{
+        font-size: x-large;
+        color: #000;
     }
 
     /* ------------------------------------------------------------- */
