@@ -1,0 +1,273 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Header Section Styles */
+.content {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+    margin-bottom: 40px;
+}
+
+.content .p1 .text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content .p1 .text p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Blog Section Styles */
+.blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-box {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.blog-box .text h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-box .text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.blog-box .img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Pagination Styles */
+#pagination {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#pagination a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#pagination a:hover {
+    background-color: #555;
+}
+
+
+/* Mail Section Styles */
+.mail {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.mail h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mail p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.mail span {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.mail-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mail-form input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.mail-form input[type="email"]:focus {
+    border-color: #007bff;
+}
+
+.mail-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.mail-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #ccc;
+    margin: 0 5px;
+    font-size: 20px;
+    transition: 0.3s;
+    padding-top: 8px;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+/* تحسين الـ Navigation للشاشات الصغيرة */
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        /* توسيط العناصر في المنتصف */
+        padding: 10px 15px;
+    }
+
+    nav h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        /* إضافة مسافة تحت العنوان */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        /* القائمة تصبح عمودية */
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 4px 5px;
+        font-size: 14px;
+        width: 100%;
+        /* جعل الروابط تمتد بعرض مناسب */
+        text-align: center;
+        /* توسيط النص */
+    }
+
+}
