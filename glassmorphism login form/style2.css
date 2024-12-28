@@ -182,19 +182,40 @@ a {
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
-  @media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .login {
     justify-content: center;
   }
 
   .container {
     width: 700px;
-    padding: 4rem 3rem 3.5rem;
+    padding: 4rem 4rem 3.5rem;
     border-radius: 1.5rem;
   }
 
   .login__title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
+  .login__icon,
+  .login__eye {
+  font-size: 1rem;
+}
 }   
   
+
+@media (max-width:600px) {
+  body,
+input,
+button {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.login__icon,
+.login__eye {
+  font-size: 1rem;
+}
+.login__forgot {
+  padding-left: 30px;
+}
+  
+}
