@@ -101,8 +101,9 @@ div.Log .Login {
     font-weight: bold;
     font-size: xxx-large;
 }
-div.Log .Login:hover{
-    color:#ededed ;
+
+div.Log .Login:hover {
+    color: #ededed;
 }
 
 div.Log .Sign_Up {
@@ -114,21 +115,22 @@ div.Log .Sign_Up {
     align-items: center;
     padding: 14px;
     width: 20px;
-    
-}
-div.Log .Sign_Up:hover{
-   background-color:#ededed;
-   box-shadow: 20px;
+
 }
 
- #shopping{
+div.Log .Sign_Up:hover {
+    background-color: #ededed;
+    box-shadow: 20px;
+}
+
+#shopping {
     margin: 0 50px;
-    padding-left:20px ;
+    padding-left: 20px;
     font-size: 70px;
     color: #6dda57;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
-} 
+}
 
 
 
@@ -146,7 +148,7 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    font-size:40px;
+    font-size: 40px;
     transition: 500ms ease;
     display: inline-block;
     padding: 0px 0px 6px 0px;
@@ -211,7 +213,7 @@ nav a.active::after {
     background-color: #c0c398;
     position: absolute;
     bottom: 0px;
-    left:10px;
+    left: 10px;
 }
 
 /* _______________________________________ */
@@ -1611,11 +1613,25 @@ footer div {
         border-bottom-left-radius: 0;
 
     }
-  
+
 
 }
-@media(max-width:1930px){
+
+@media(max-width:1930px) {
     div.Log {
         display: none;
+    }
+}
+
+
+
+@media(max-width:320px) {
+    #product1 #search {
+        padding: 10px;
+        width: 150px;
+        height: 70px;
+        border: none;
+        outline: none;
+        border-radius: 6px;
     }
 }
