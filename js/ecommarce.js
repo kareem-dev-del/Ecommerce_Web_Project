@@ -65,6 +65,7 @@ let product_details = function (src) {
 closeBroDetails.addEventListener('click', function () {
     parent_details.style.cssText = ` display: none;`
     overlay2.style.cssText = ` display: none;`
+     container.style.cssText = ` z-index: 999;`
     body.style.overflow = 'auto'
 
 
@@ -77,7 +78,7 @@ closeBroDetails.addEventListener('click', function () {
 // btn go to shop
 btnGoToShop.onclick = function () {
 
-    location.href = '../shop/shop.html'
+    location.href = 'shop/shop.html'
 }
 
 
