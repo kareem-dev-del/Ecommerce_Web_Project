@@ -13,19 +13,40 @@
 
 
     <!-- Navigation -->
-    <div class="menu">
-        <nav>
-            <h2><i class="fas fa-store"></i> T-Shirt Store</h2>
-            <ul>
-                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="../shop/shop.html"><i class="fas fa-shopping-cart"></i> Shop</a></li>
-                <li><a href="../Blog/blog.html" class="active"><i class="fas fa-blog"></i> Blog</a></li>
-                <li><a href="../About/about.html"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="../contact/contact.html"><i class="fas fa-phone"></i> Contact</a></li>
-            </ul>
-        </nav>
+    <!--  hover icon nav bar -->
+    <div id="overlay"> </div>
+    <!-- Navigation -->
+    <div id="container" class="container">
+        <div class="header">
+            <!-- logo  -->
+            <div id="a">
+                <h1> <i style="font-size: larger; " class="fas fa-store"></i>T-Shirt Hub</h1>
+
+            </div>
+
+            <nav id="nav">
+                <!-- icon close nav bar -->
+                <div id="close"> <i class="fa-solid fa-xmark"></i></div>
+                <li><a class="active" href="../Blog/blog.html"><i id="b" class=" fas fa-blog "></i>Blog</a></li>
+                <li><a href="../contact/contact.html"><i id="e" class="fas fa-phone"></i>Contact</a></li>
+                <li><a href="../About/about.html"><i id="c" class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="../shop/shop.html"><i id="d" class="fas fa-shopping-cart"></i>shop</a></li>
+                <li><a href="../index.html"><i id="a" class="fas fa-home"></i>Home</a></li>
+
+            </nav>
+            <!-- <div class="Log">
+                 <a class="Login" href="../glassmorphism login form/login1.html">Login</a>
+                 <a class="Sign_Up" href="../glassmorphism login form/login2.html">Sign Up</a>
+ 
+             </div> -->
+
+            <!-- icon nav bar  -->
+            <div id="listmobile">
+                <div id="bars"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
     </div>
-    <div class="container">
+    <div class="containerr">
 
 
         <!-- Content text and image in header -->
@@ -149,6 +170,9 @@
             </div>
         </footer>
     </div>
+    <script src="js/blog.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/all.min.js"></script>
 </body>
 
 </html>

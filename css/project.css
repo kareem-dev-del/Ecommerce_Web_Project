@@ -49,9 +49,6 @@ body {
 
 
 }
-#color{
-    background-color: #f6f8fa;
-}
 
 /* --Style icon nav bar---- */
 #overlay {
@@ -66,12 +63,11 @@ body {
 
 .container {
     width: 100%;
-     background-color: #969cc1; 
-    /* background-color: #5c5f81; */
+    background-color: #969cc1;
     position: sticky;
     top: 0;
     z-index: 999;
-    opacity:75%;
+    opacity: 75%;
 }
 
 /* <!-- Start header  --> */
@@ -90,42 +86,45 @@ body {
     font-weight: 400;
     font-style: normal;
     cursor: default;
-    font-size:50px;
+    font-size: 50px;
 }
 
 
 
-div.Log{
+div.Log {
     font-size: xxx-large;
-   
-   }
-div.Log .Login{
+
+}
+
+div.Log .Login {
     text-decoration: none;
     margin-right: 30px;
     color: #273bd4;
     border-radius: 25px;
     font-weight: bold;
-    padding:15px;
-    font-size: xxx-large;  
+    padding: 15px;
+    font-size: xxx-large;
 }
-div.Log .Login:hover{
-    background-color:#394ac6 ;
+
+div.Log .Login:hover {
+    background-color: #394ac6;
     border-radius: 30px;
-    padding:15px 23px;
+    padding: 15px 23px;
     width: 25px;
     color: #000;
 }
 
 
-div.Log .Sign_Up{
+div.Log .Sign_Up {
     text-decoration: none;
     background-color: #394ac6;
     color: #000000;
     border-radius: 30px;
-    padding:15px ;
+    padding: 15px;
     width: 25px;
 }
-div.Log .Sign_Up:hover{
+
+div.Log .Sign_Up:hover {
     background-color: #969cc1;
     color: #273bd4;
     border-radius: 30px;
@@ -133,7 +132,7 @@ div.Log .Sign_Up:hover{
 }
 
 
-  
+
 
 nav {
     display: flex;
@@ -143,44 +142,50 @@ nav {
     gap: 50px;
     align-items: center;
 }
+
 nav a {
     text-decoration: none;
     color: black;
-    font-size:40px;
+    font-size: 40px;
     transition: 500ms ease;
     display: inline-block;
     padding: 0px 0px 6px 0px;
 }
-nav a #a{
-    font-size:43px ;
-    margin-right: 10px ;
+
+nav a #a {
+    font-size: 43px;
+    margin-right: 10px;
     align-items: center;
 }
-nav a #b{
-    font-size: 33px ;
-    margin-right: 5px ;
-    color:black;
+
+nav a #b {
+    font-size: 33px;
+    margin-right: 5px;
+    color: black;
     align-items: center;
 
 }
-nav a #c{
-    font-size:35px ;
-    margin-right: 5px ;
-    color:black;
+
+nav a #c {
+    font-size: 35px;
+    margin-right: 5px;
+    color: black;
     align-items: center;
 
 }
-nav a #d{
-    font-size: 35px ;
-    margin-right: 5px ;
-    color:black;
+
+nav a #d {
+    font-size: 35px;
+    margin-right: 5px;
+    color: black;
     align-items: center;
 
 }
-nav a #e{
-    font-size: 35px ;
-    margin-right: 5px ;
-    color:rgb(0, 0, 0);
+
+nav a #e {
+    font-size: 35px;
+    margin-right: 5px;
+    color: rgb(0, 0, 0);
     align-items: center;
 
 }
@@ -196,10 +201,11 @@ a.active {
     color: #434a81;
     font-size: 43px;
 }
- /* line button on home */
+
+/* line button on home */
 nav a.active::after {
     content: '';
-    width:19%;
+    width: 19%;
     height: 2px;
     background-color: #546d91;
     position: absolute;
@@ -231,6 +237,7 @@ nav a.active::after {
     font-size: medium;
     display: none;
 }
+
 /* End  display nav bar   */
 /* <!-- End header --> */
 
@@ -240,7 +247,7 @@ nav a.active::after {
 #p1 {
     width: 100%;
     height: 90vh;
-     background-image: url(../img/6.jpg);
+    background-image: url(../img/6.jpg);
     background-color: var(--second-color);
     background-size: cover;
     background-repeat: no-repeat;
@@ -270,13 +277,13 @@ nav a.active::after {
 
 #p1 h1 {
     font-size: 90px;
-    
+
 }
 
 #p1 p {
-    font-size:25px;
-   font-weight: bold;
-   color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
 }
 
 #p1 button {
@@ -286,7 +293,7 @@ nav a.active::after {
     font-size: xx-large;
     cursor: pointer;
     color: black;
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     border: none;
     border-radius: 24px;
     font-weight: 700;
@@ -294,9 +301,10 @@ nav a.active::after {
     align-items: center;
     gap: 10px;
     transition: background-color 0.3s ease;
-   
+
 }
-button #text{
+
+button #text {
     text-decoration: none;
     color: #000;
 }
@@ -305,6 +313,7 @@ button #text{
     background-color: #b8bac6;
 
 }
+
 /* <!-- End landing section --> */
 
 
@@ -317,7 +326,7 @@ button #text{
     justify-content: center;
     gap: 40px;
     transition: 500ms;
-   
+
 }
 
 #feature div {
@@ -421,6 +430,7 @@ button #text{
         background-color: #ffdab5;
     }
 }
+
 /*End feature and  pragraph */
 
 /*Start Featured Products*/
@@ -511,11 +521,12 @@ button #text{
 .des .star {
     color: gold;
 }
+
 /* <!-- End Featured Products--> */
 
 
-  /*  Start  All T-shirts & Accessories    */
-  #benner1 {
+/*  Start  All T-shirts & Accessories    */
+#benner1 {
     margin: 67px 0px 10px 0px;
     display: flex;
     flex-direction: column;
@@ -525,18 +536,18 @@ button #text{
     padding: 10px;
     width: 100%;
     height: 190px;
-    background-color:#afb4d0;
+    background-color: #afb4d0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  #benner1 button {
+}
+
+#benner1 button {
     margin: 30px 0px 0px119px;
     padding: 35px 40px;
     outline: none;
     font-size: x-large;
     cursor: pointer;
     color: black;
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     border: none;
     border-radius: 24px;
     font-weight: 700;
@@ -544,15 +555,18 @@ button #text{
     align-items: center;
     gap: 10px;
     transition: background-color 0.3s ease;
-   
-} 
-#benner1 button a{
+
+}
+
+#benner1 button a {
     text-decoration: none;
     color: #454758;
 }
-#benner1 button:hover{
+
+#benner1 button:hover {
     background-color: #fefefe;
 }
+
 /* End  All T-shirts & Accessories  */
 
 /* ___________________ */
@@ -567,6 +581,7 @@ button #text{
     top: 0;
     z-index: 1000;
 }
+
 /* ________________ */
 /* ________________ */
 
@@ -661,6 +676,7 @@ button #text{
     font-weight: 600;
     word-spacing: 4px;
 }
+
 /* <!--End  parent_details  --> */
 
 /* <!--Start benner2--> */
@@ -709,7 +725,7 @@ div#container-sm button {
 div#container-sm :hover button {
     background-color: var(--main-color);
     border: var(--main-color) solid 1px;
-} 
+}
 
 .box-1 {
     background-image: url(../img/background-benner1.png);
@@ -741,6 +757,7 @@ div#container-sm :hover button {
     padding: 0px 0px 0px 56px;
     cursor: pointer;
 }
+
 /* ____________________ */
 /* Start  benner3 */
 #benner3 {
@@ -795,12 +812,13 @@ div#container-sm :hover button {
     background-position: top;
     background-size: cover;
 }
+
 /* ____________________________________________________ */
 
 
 
 
-    
+
 /* _________________________________________________________________________________________________ */
 /* _____________________________________________________________________________________________________________ */
 
@@ -823,9 +841,9 @@ div#container-sm :hover button {
     translate: 100%;
 }
 
-  .activemessage_inpEmail {
+.activemessage_inpEmail {
     top: 0;
-}  
+}
 
 
 
@@ -844,6 +862,7 @@ div#container-sm :hover button {
     cursor: pointer;
 
 }
+
 /* __________________________ */
 
 
@@ -1055,30 +1074,36 @@ footer h4 {
         box-shadow: 11px 9px 12px 5px;
 
     }
-    nav a #a{
-        font-size: 33px ;
+
+    nav a #a {
+        font-size: 33px;
         margin-left: 8px;
     }
-    nav a #b{
-        font-size: 30px ;
+
+    nav a #b {
+        font-size: 30px;
         align-items: center;
-    
+
     }
-    nav a #c{
-        font-size: 35px ;
+
+    nav a #c {
+        font-size: 35px;
         margin-left: 8px;
-    
+
     }
-    nav a #d{
-        font-size: 33px ;
+
+    nav a #d {
+        font-size: 33px;
         margin-left: 8px;
-    
+
     }
-    nav a #e{
-        font-size: 33px ;
+
+    nav a #e {
+        font-size: 33px;
         margin-left: 8px;
-    
+
     }
+
     #shoppingDesktop {
         display: none;
     }
@@ -1132,10 +1157,12 @@ footer h4 {
         display: block;
         width: fit-content;
     }
+
     #p1 button {
-        padding:25px 30px;
+        padding: 25px 30px;
     }
-    button #text{
+
+    button #text {
         font-size: x-large;
         color: #000;
     }
@@ -1496,10 +1523,11 @@ footer h4 {
         top: 3px;
         font-size: medium;
     }
-    div.Log{
+
+    div.Log {
         display: none;
-       
-       }
+
+    }
 
 }
 
@@ -1548,32 +1576,37 @@ footer h4 {
         padding: 0px 199px 13px 0px;
         border-bottom: solid 1px var(--text-color);
     }
-     /* Style icon  */
-    nav a #a{
-        font-size: 33px ;
+
+    /* Style icon  */
+    nav a #a {
+        font-size: 33px;
         margin-left: 8px;
     }
-    nav a #b{
-        font-size: 30px ;
+
+    nav a #b {
+        font-size: 30px;
         align-items: center;
-    
+
     }
-    nav a #c{
-        font-size: 35px ;
+
+    nav a #c {
+        font-size: 35px;
         margin-left: 8px;
-    
+
     }
-    nav a #d{
-        font-size: 33px ;
+
+    nav a #d {
+        font-size: 33px;
         margin-left: 8px;
-    
+
     }
-    nav a #e{
-        font-size: 33px ;
+
+    nav a #e {
+        font-size: 33px;
         margin-left: 8px;
-    
+
     }
-    
+
 
 
     /* Number_of_products */
@@ -1911,10 +1944,11 @@ footer h4 {
 
         z-index: 1001;
     }
-    div.Log{
-       display: none;
-       
-       }
+
+    div.Log {
+        display: none;
+
+    }
 }
 
 
@@ -2005,18 +2039,19 @@ footer h4 {
         padding: 30px 10px 20px 10px;
         margin-left: 0;
     }
-    div.Log{
+
+    div.Log {
         display: none;
-       
-       }
+
+    }
 
 }
 
 
 
 @media (min-width:1440px) and (max-width:1919px) {
-  
-    
+
+
     #feature {
         padding: 0 11px;
 
@@ -2052,18 +2087,20 @@ footer h4 {
     #prodetails {
         padding: 15px 54px;
     }
-    div.Log{
+
+    div.Log {
         display: none;
-       
-       }
-       
+
+    }
+
 
 }
+
 @media (max-width:2050px) {
-    div.Log{
+    div.Log {
         display: none;
-       
-       }
+
+    }
 
 }
 
@@ -2295,12 +2332,12 @@ footer h4 {
         outline: none;
         font-size: 25px;
         font-weight: bolder;
-       
-       
-    } 
 
-   
-  
+
+    }
+
+
+
 }
 
 
@@ -2425,13 +2462,15 @@ footer h4 {
 
     }
 }
-@media (max-width:1500px){
-    div.Log{
-        display:none ;
-      }
-      nav {
-        
+
+@media (max-width:1500px) {
+    div.Log {
+        display: none;
+    }
+
+    nav {
+
         align-items: flex-start;
     }
-    
+
 }
