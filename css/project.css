@@ -59,7 +59,6 @@ body {
     display: none;
     top: 0;
     z-index: 999;
-    overflow-y: auto;
 }
 
 .container {
@@ -1946,10 +1945,10 @@ footer h4 {
         z-index: 1001;
     }
 
-    /* div.Log {
+    div.Log {
         display: none;
 
-    } */
+    }
 }
 
 
@@ -2041,10 +2040,10 @@ footer h4 {
         margin-left: 0;
     }
 
-    /* div.Log {
+    div.Log {
         display: none;
 
-    } */
+    }
 
 }
 
@@ -2089,19 +2088,19 @@ footer h4 {
         padding: 15px 54px;
     }
 
-    /* div.Log {
+    div.Log {
         display: none;
 
-    } */
+    }
 
 
 }
 
 @media (max-width:2050px) {
-    /* div.Log {
+    div.Log {
         display: none;
 
-    } */
+    }
 
 }
 
@@ -2465,9 +2464,9 @@ footer h4 {
 }
 
 @media (max-width:1500px) {
-    /* div.Log {
+    div.Log {
         display: none;
-    } */
+    }
 
     nav {
 
