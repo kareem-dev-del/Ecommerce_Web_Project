@@ -50,7 +50,9 @@ body {
 
 }
 
-/* --Style icon nav bar---- */
+/* ***************************************************************************** */
+
+/* --Style icon nav bar--and -media queries it */
 #overlay {
     width: 100%;
     height: 100vh;
@@ -86,53 +88,8 @@ body {
     font-weight: 400;
     font-style: normal;
     cursor: default;
-    font-size: 50px;
+    font-size: 45px;
 }
-
-
-
-div.Log {
-    font-size: xxx-large;
-
-}
-
-div.Log .Login {
-    text-decoration: none;
-    margin-right: 30px;
-    color: #273bd4;
-    border-radius: 25px;
-    font-weight: bold;
-    padding: 15px;
-    font-size: xxx-large;
-}
-
-div.Log .Login:hover {
-    background-color: #394ac6;
-    border-radius: 30px;
-    padding: 15px 23px;
-    width: 25px;
-    color: #000;
-}
-
-
-div.Log .Sign_Up {
-    text-decoration: none;
-    background-color: #394ac6;
-    color: #000000;
-    border-radius: 30px;
-    padding: 15px;
-    width: 25px;
-}
-
-div.Log .Sign_Up:hover {
-    background-color: #969cc1;
-    color: #273bd4;
-    border-radius: 30px;
-    font-weight: bolder;
-}
-
-
-
 
 nav {
     display: flex;
@@ -190,9 +147,6 @@ nav a #e {
 
 }
 
-
-
-
 nav a:hover {
     color: #d3d5e2;
 }
@@ -205,7 +159,7 @@ a.active {
 /* line button on home */
 nav a.active::after {
     content: '';
-    width: 19%;
+    width: 13%;
     height: 2px;
     background-color: #546d91;
     position: absolute;
@@ -236,6 +190,369 @@ nav a.active::after {
 #close {
     font-size: medium;
     display: none;
+}
+
+/* ********************************** */
+@media (max-width:600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    .header h1 {
+        font-family: "Kaushan Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        cursor: default;
+        font-size: larger;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 1000;
+        width: 280px;
+        background: var(--second-color);
+        gap: 50px;
+        padding: 20px 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        /* أهم حاجة هنا */
+        transition: right 0.3s ease-in-out;
+    }
+
+    nav a #a {
+        font-size: 33px;
+        margin-left: 8px;
+    }
+
+    nav a #b {
+        font-size: 30px;
+        align-items: center;
+
+    }
+
+    nav a #c {
+        font-size: 35px;
+        margin-left: 8px;
+
+    }
+
+    nav a #d {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    nav a #e {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    #listmobile {
+        font-size: xx-large;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        justify-content: space-between;
+        padding: 0 6px;
+    }
+
+    div#listmobile a {
+        color: black;
+    }
+
+    #close {
+        font-size: 25px;
+        color: black;
+        align-self: flex-end;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/* media queries Tablet */
+@media (min-width:601px) and (max-width:1023px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    .header h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 1000;
+        width: 280px;
+        background: var(--second-color);
+        gap: 50px;
+        padding: 20px 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        /* أهم حاجة هنا */
+        transition: right 0.3s ease-in-out;
+    }
+
+    /* Style icon  */
+    nav a #a {
+        font-size: 33px;
+        margin-left: 8px;
+    }
+
+    nav a #b {
+        font-size: 30px;
+        align-items: center;
+
+    }
+
+    nav a #c {
+        font-size: 35px;
+        margin-left: 8px;
+
+    }
+
+    nav a #d {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    nav a #e {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    #listmobile {
+        font-size: xx-large;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        justify-content: space-between;
+        padding: 0 4px;
+    }
+
+    div#listmobile a {
+        color: black;
+    }
+
+    #close {
+        font-size: 25px;
+        color: black;
+        align-self: flex-end;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Desktop */
+@media (min-width:1024px) and (max-width:1439px) {
+    .header {
+        padding: 13px 27px;
+
+    }
+
+    .header h1 {
+        font-size: xx-large;
+    }
+}
+
+/*  taplet to desktop */
+@media (min-width:768px) and (max-width: 1023px) {
+    .header h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    .nav a {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav a i {
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .header h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    .nav a {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a i {
+        margin-right: 5px;
+    }
+
+}
+
+@media (max-width: 2100px) and (min-width:900px) {
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    .header h1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 1000;
+        width: 280px;
+        background: var(--second-color);
+        gap: 50px;
+        padding: 20px 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        /* أهم حاجة هنا */
+        transition: right 0.3s ease-in-out;
+    }
+
+
+    /* Style icon  */
+    nav a #a {
+        font-size: 33px;
+        margin-left: 8px;
+    }
+
+    nav a #b {
+        font-size: 30px;
+        align-items: center;
+
+    }
+
+    nav a #c {
+        font-size: 35px;
+        margin-left: 8px;
+
+    }
+
+    nav a #d {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    nav a #e {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    #listmobile {
+        font-size: xx-large;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        justify-content: space-between;
+        padding: 0 4px;
+    }
+
+    div#listmobile a {
+        color: black;
+    }
+
+    #close {
+        font-size: 25px;
+        color: black;
+        align-self: flex-end;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 10px;
+    }
+
 }
 
 /* End  display nav bar   */
@@ -1041,121 +1358,11 @@ footer h4 {
         padding: 0px;
     }
 
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: none;
-        padding: 13px 15px;
-        box-shadow: 0px -7px 12px;
-    }
-
-    .header h1 {
-        font-family: "Kaushan Script", cursive;
-        font-weight: 400;
-        font-style: normal;
-        cursor: default;
-        font-size: larger;
-    }
-
-    nav {
-        display: flex;
-        list-style: none;
-        flex-direction: column;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        z-index: 1000;
-        width: 192px;
-        background: var(--second-color);
-        gap: 19px;
-        padding: 16px;
-        box-shadow: 11px 9px 12px 5px;
-
-    }
-
-    nav a #a {
-        font-size: 33px;
-        margin-left: 8px;
-    }
-
-    nav a #b {
-        font-size: 30px;
-        align-items: center;
-
-    }
-
-    nav a #c {
-        font-size: 35px;
-        margin-left: 8px;
-
-    }
-
-    nav a #d {
-        font-size: 33px;
-        margin-left: 8px;
-
-    }
-
-    nav a #e {
-        font-size: 33px;
-        margin-left: 8px;
-
-    }
-
-    #shoppingDesktop {
-        display: none;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: black;
-        font-size: 19px;
-        transition: 500ms ease;
-        display: inline-block;
-        padding: 0px 199px 13px 0px;
-        border-bottom: solid 1px var(--text-color);
-    }
-
-
-
-    /* cart */
-
-    #Number_of_products {
-        display: none;
-    }
-
-
-
 
 
     #overlay2 {
 
         z-index: 1001;
-    }
-
-    #listmobile {
-        font-size: larger;
-        display: flex;
-        align-items: center;
-        width: fit-content;
-        justify-content: space-between;
-        padding: 0 6px;
-    }
-
-    li#Shopping {
-        list-style: none;
-    }
-
-    div#listmobile a {
-        color: black;
-    }
-
-    #close {
-        font-size: medium;
-        display: block;
-        width: fit-content;
     }
 
     #p1 button {
@@ -1524,10 +1731,10 @@ footer h4 {
         font-size: medium;
     }
 
-    div.Log {
+    /* div.Log {
         display: none;
 
-    }
+    } */
 
 }
 
@@ -1542,109 +1749,7 @@ footer h4 {
         padding: 0px;
     }
 
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: none;
-        padding: 13px 15px;
-        box-shadow: 0px -7px 12px;
-    }
 
-    nav {
-        display: flex;
-        list-style: none;
-        flex-direction: column;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -300px;
-        z-index: 1000;
-        width: 272px;
-        background: var(--second-color);
-        gap: 29px;
-        padding: 16px;
-        box-shadow: 11px 9px 12px 5px;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: black;
-        font-size: x-large;
-        transition: 500ms ease;
-        display: inline-block;
-        padding: 0px 199px 13px 0px;
-        border-bottom: solid 1px var(--text-color);
-    }
-
-    /* Style icon  */
-    nav a #a {
-        font-size: 33px;
-        margin-left: 8px;
-    }
-
-    nav a #b {
-        font-size: 30px;
-        align-items: center;
-
-    }
-
-    nav a #c {
-        font-size: 35px;
-        margin-left: 8px;
-
-    }
-
-    nav a #d {
-        font-size: 33px;
-        margin-left: 8px;
-
-    }
-
-    nav a #e {
-        font-size: 33px;
-        margin-left: 8px;
-
-    }
-
-
-
-    /* Number_of_products */
-    #Number_of_products {
-        display: none;
-    }
-
-
-
-
-
-
-    #shoppingDesktop {
-        display: none;
-    }
-
-    #listmobile {
-        font-size: larger;
-        display: flex;
-        align-items: center;
-        width: fit-content;
-        justify-content: space-between;
-        padding: 0 4px;
-    }
-
-    li#Shopping {
-        list-style: none;
-    }
-
-    div#listmobile a {
-        color: black;
-    }
-
-    #close {
-        font-size: medium;
-        display: block;
-        width: fit-content;
-    }
 
     /* ------------------------------- */
     #p1 {
@@ -1945,10 +2050,6 @@ footer h4 {
         z-index: 1001;
     }
 
-    div.Log {
-        display: none;
-
-    }
 }
 
 
@@ -1956,14 +2057,6 @@ footer h4 {
 
 /* Desktop */
 @media (min-width:1024px) and (max-width:1439px) {
-    .header {
-        padding: 13px 27px;
-
-    }
-
-    .header h1 {
-        font-size: xx-large;
-    }
 
     #p1 {
         height: 81vh;
@@ -2040,11 +2133,6 @@ footer h4 {
         margin-left: 0;
     }
 
-    div.Log {
-        display: none;
-
-    }
-
 }
 
 
@@ -2088,39 +2176,8 @@ footer h4 {
         padding: 15px 54px;
     }
 
-    div.Log {
-        display: none;
-
-    }
-
 
 }
-
-@media (max-width:2050px) {
-    div.Log {
-        display: none;
-
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Responsive size font on All device  */
 
@@ -2344,9 +2401,7 @@ footer h4 {
 
 /*  taplet to desktop */
 @media (min-width:768px) and (max-width: 1023px) {
-    .header h1 {
-        font-size: larger;
-    }
+
 
     #p1 h3 {
         font-size: x-large;
@@ -2461,16 +2516,4 @@ footer h4 {
         font-size: xxx-large;
 
     }
-}
-
-@media (max-width:1500px) {
-    div.Log {
-        display: none;
-    }
-
-    nav {
-
-        align-items: flex-start;
-    }
-
 }
