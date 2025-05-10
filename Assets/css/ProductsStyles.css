@@ -1,0 +1,100 @@
+/* Filter and Sort Section */
+.filter-sort { /*Search and sort label*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-sort input, .filter-sort select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+.filter-sort input:focus, .filter-sort select:focus {
+    border-color: #ffd700;
+    outline: none;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*عرض كل عمود لا يقل عن 250 بكسل ولا يتجاوز عرض العمود*/
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*اضافة ظل خفيف حول البطاقة*/
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 15px;
+    margin: 10px; /* مسافة خارجية حول البطاقة */
+    height: 450px; /* تحديد ارتفاع البطاقة */
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /*رفع البطاقة لفوق*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* تصميم صورة المنتج */
+.product-card img {
+    width: 100%; /* الصورة تملأ العرض بالكامل */
+    height: 300px; /* ارتفاع الصورة ثابت */
+    object-fit: cover; /* اقتصاص الصورة لتناسب المساحة دون تشويه */
+    border-radius: 10px; /* زوايا مستديرة للصورة */
+    margin-bottom: 15px; /* مسافة أسفل الصورة */
+}
+
+/* تصميم عنوان المنتج */
+.product-card h2 {
+    font-size: .75rem; /* حجم الخط صغير */
+    margin: 3px; /* مسافة حول النص */
+    color: #212121; /* لون النص أسود داكن */
+}
+
+/* تصميم السعر */
+.product-card .price {
+    color: #ffd700; /* لون السعر ذهبي */
+    font-size: 1.4rem; /* حجم خط كبير لجذب الانتباه */
+    font-weight: bold; /* النص بخط عريض */
+    margin-bottom: 15px; /* مسافة أسفل السعر */
+}
+
+/* تصميم الزر */
+.product-card button {
+    display: inline-block; /* جعل الزر يظهر ككتلة داخلية */
+    padding: 10px 15px; /* مسافة داخلية للزر */
+    background-color: #212121; /* لون خلفية الزر أسود */
+    color: #fff; /* لون النص أبيض */
+    border: none; /* إزالة الحدود الافتراضية */
+    border-radius: 5px; /* زوايا مستديرة للزر */
+    cursor: pointer; /* تغيير المؤشر عند التمرير إلى اليد */
+    font-size: 1rem; /* حجم الخط */
+    transition: background-color 0.3s ease; /* تأثير سلس عند تغيير لون الخلفية */
+}
+
+.product-card button:hover {
+    background-color: #ffd700;
+    color: #212121;
+}
+
+/* تصميم قسم "اتصل بنا" في الفوتر */
+footer .contact-us {
+    text-align: center; /* محاذاة النص في المنتصف */
+    padding: 15px 0; /* مسافة داخلية عمودية */
+    background-color: #000; /* لون خلفية سوداء */
+    color: #f4f4f4; /* لون النص رمادي فاتح */
+    font-size: 0.9rem; /* حجم النص صغير */
+    margin-top: 40px; /* مسافة خارجية أعلى القسم */
+}

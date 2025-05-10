@@ -1,9 +1,0 @@
-profile.html
-
-add to cart button
-
-cart.html
-
-favorite.html
-
-
