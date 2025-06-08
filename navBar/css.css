@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Julius+Sans+One&family=Kaushan+Script&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Wix+Madefor+Display:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Kaushan+Script&family=Teko:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+    --main-color: #6dda57;
+    --second-color: #e4e6f4;
+    --text-color: #9597a5;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+
+body {
+
+    font-family: "Julius Sans One", sans-serif;
+    font-style: small;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    position: relative;
+
+
+}
+
+/* ***************************************************************************** */
+
+/* --Style icon nav bar---- */
+#overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    top: 0;
+    z-index: 999;
+}
+
+.container {
+    width: 100%;
+    background-color: #969cc1;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    opacity: 75%;
+}
+
+/* <!-- Start header  --> */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 20px 140px;
+    box-shadow: 0px -7px 12px;
+}
+
+.header h1 {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+    font-size: 45px;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    position: relative;
+    gap: 50px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    transition: 500ms ease;
+    display: inline-block;
+    padding: 0px 0px 6px 0px;
+}
+
+nav a #a {
+    font-size: 43px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+nav a #b {
+    font-size: 33px;
+    margin-right: 5px;
+    color: black;
+    align-items: center;
+
+}
+
+nav a #c {
+    font-size: 35px;
+    margin-right: 5px;
+    color: black;
+    align-items: center;
+
+}
+
+nav a #d {
+    font-size: 35px;
+    margin-right: 5px;
+    color: black;
+    align-items: center;
+
+}
+
+nav a #e {
+    font-size: 35px;
+    margin-right: 5px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+
+}
+
+nav a:hover {
+    color: #d3d5e2;
+}
+
+a.active {
+    color: #434a81;
+    font-size: 43px;
+}
+
+/* line button on home */
+nav a.active::after {
+    content: '';
+    width: 13%;
+    height: 2px;
+    background-color: #546d91;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+/* Start display nav bar  */
+/* list mobile */
+#listmobile {
+    font-size: larger;
+    display: none;
+}
+
+/*كده ظاهر */
+.active {
+    right: 0px;
+    transition: 200ms;
+}
+
+/*كده مش ظاهر الزرار*/
+.hide {
+    right: -300px;
+    transition: 350ms;
+}
+
+#close {
+    font-size: medium;
+    display: none;
+}
+
+/* ********************************** */
+@media (max-width:600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    .header h1 {
+        font-family: "Kaushan Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        cursor: default;
+        font-size: larger;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 1000;
+        width: 280px;
+        background: var(--second-color);
+        gap: 50px;
+        padding: 20px 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow-y: auto; /* أهم حاجة هنا */
+        transition: right 0.3s ease-in-out;
+    }
+    nav a #a {
+        font-size: 33px;
+        margin-left: 8px;
+    }
+
+    nav a #b {
+        font-size: 30px;
+        align-items: center;
+
+    }
+
+    nav a #c {
+        font-size: 35px;
+        margin-left: 8px;
+
+    }
+
+    nav a #d {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    nav a #e {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    #listmobile {
+        font-size: larger;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        justify-content: space-between;
+        padding: 0 6px;
+    }
+
+    div#listmobile a {
+        color: black;
+    }
+
+    #close {
+        font-size: 25px;
+        color: black;
+        align-self: flex-end;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+/* media queries Tablet */
+@media (min-width:601px) and (max-width:1023px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+    .header  h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 1000;
+        width: 280px;
+        background: var(--second-color);
+        gap: 50px;
+        padding: 20px 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow-y: auto; /* أهم حاجة هنا */
+        transition: right 0.3s ease-in-out;
+    }
+
+    /* Style icon  */
+    nav a #a {
+        font-size: 33px;
+        margin-left: 8px;
+    }
+
+    nav a #b {
+        font-size: 30px;
+        align-items: center;
+
+    }
+
+    nav a #c {
+        font-size: 35px;
+        margin-left: 8px;
+
+    }
+
+    nav a #d {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    nav a #e {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    #listmobile {
+        font-size: larger;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        justify-content: space-between;
+        padding: 0 4px;
+    }
+
+    div#listmobile a {
+        color: black;
+    }
+
+    #close {
+        font-size: 25px;
+        color: black;
+        align-self: flex-end;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Desktop */
+@media (min-width:1024px) and (max-width:1439px) {
+    .header {
+        padding: 13px 27px;
+
+    }
+
+    .header h1 {
+        font-size: xx-large;
+    }
+}
+
+/*  taplet to desktop */
+@media (min-width:768px) and (max-width: 1023px) {
+    .header  h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header  h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+    .nav a {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav a i {
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .header  h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+    .nav a {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav a i {
+        margin-right: 5px;
+    }
+
+}
+@media (max-width: 2100px) and (min-width:900px){
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+    .header  h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 13px 15px;
+        box-shadow: 0px -7px 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        z-index: 1000;
+        width: 280px;
+        background: var(--second-color);
+        gap: 50px;
+        padding: 20px 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        overflow-y: auto; /* أهم حاجة هنا */
+        transition: right 0.3s ease-in-out;
+    }
+
+
+    /* Style icon  */
+    nav a #a {
+        font-size: 33px;
+        margin-left: 8px;
+    }
+
+    nav a #b {
+        font-size: 30px;
+        align-items: center;
+
+    }
+
+    nav a #c {
+        font-size: 35px;
+        margin-left: 8px;
+
+    }
+
+    nav a #d {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    nav a #e {
+        font-size: 33px;
+        margin-left: 8px;
+
+    }
+
+    #listmobile {
+        font-size: larger;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        justify-content: space-between;
+        padding: 0 4px;
+    }
+
+    div#listmobile a {
+        color: black;
+    }
+
+    #close {
+        font-size: 25px;
+        color: black;
+        align-self: flex-end;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+}
+
+ 
